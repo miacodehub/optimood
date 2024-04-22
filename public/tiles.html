@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Tiles</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <button class="addButton" id="addButton">+</button>
+  <div id="tilesContainer" class="tiles-container"></div>
+  <template id="tileTemplate">
+    <div class="tile">
+      <div class="front">Click to Flip</div>
+      <div class="back">
+        <div class="fields">
+          <label for="name">Name:</label>
+          <input type="text" id="name">
+          <label for="rating">Rating:</label>
+          <input type="range" id="rating" min="1" max="10">
+          <label for="lastEngaged">Last Engaged:</label>
+          <input type="date" id="lastEngaged" max="">
+          <button class="saveButton">Save</button>
+          <span class="flipIcon">↺</span>
+        </div>
+      </div>
+    </div>
+  </template>
+  <script src="script.js"></script>
+</body>
+</html>
